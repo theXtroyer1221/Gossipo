@@ -1,124 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Gossipo | The Chat Project.</title>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<script src="js/snap.svg-min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
-		<!--[if IE]>
-  		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<div id="pagewrap" class="pagewrap">
-		
-			<div class="container show" id="page-1" style="background-image: url(https://www.transparenttextures.com/patterns/batthern.png); background-position: center;">
-				<header class="codrops-header">
-                    <img src="logo.png" alt="Gossipo">
-				</header>
-					<div style="text-align: center; background-color: #ffffff; color: #000000; margin-left:20%; border-radius: 20px; width: 60%; padding: 20px;">
-                        <p>Welcome to our Brand New Chat, we are very happy with the progress so far and we hope you are too! Join us today and meet new friends in our amazing online chat.</p>
-						<p>To join the chat, select the link below:</p>
-						<p><a class="pageload-link" href="#chat" style="border-radius: 25px; background-color: #2DAD67;">Join Chat!</a></p>
-					</div>
-					
-			</div><!-- /container -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gossipo | The Chat Project.</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/snap.svg-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <script data-ad-client="ca-pub-4826446037389263" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!--[if IE]>
+      <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="pagewrap" class="pagewrap">
+      <div class="container show" id="page-1" style="background-image: url(https://www.transparenttextures.com/patterns/batthern.png); background-position: center;">
+        <header class="codrops-header">
+          <img src="logo.png" alt="Gossipo" />
+        </header>
+        <div style="text-align: center; background-color: #ffffff; color: #000000; margin-left:20%; border-radius: 20px; width: 60%; padding: 20px;">
+          <p>Welcome to our Brand New Chat, we are very happy with the progress so far and we hope you are too! Join us today and meet new friends in our amazing online chat.</p>
+          <p>To join the chat, select the link below:</p>
+          <p><a class="pageload-link" href="#chat" style="border-radius: 25px; background-color: #2DAD67;">Join Chat!</a></p>
+        </div>
+      </div>
+      <!-- /container -->
 
-			<header><center></center></header>
-			<div class="container" id="chat" style="background-image: url(https://www.transparenttextures.com/patterns/batthern.png); background-position: center;">
-				<link href="https://chatterjad.thextroyer1221.repl.co/style.css" rel="stylesheet" />
-                <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-				<div>
-                        
-					<div id="mario-chat" style="background-color: #2DAD67; margin-top: 0px;">
-                        <center>
-                        <img src="logo-small.png" alt="Gossipo">
-                            <p style="margin-top: -15px"><a class="pageload-link" href="#page-1">Close Chat</a></p>
-                            </center>
-		
-		<div id="chat-window">
-			<div id="output"></div>
-			<div id="feedback"></div>
-		</div>
-		<input id="handle" type="text" placeholder="Name" />
-    <input id="message" type="text" placeholder="Message" />
-    <button id="send">Send</button>
-	</div>
-	<script>
-		var input = document.getElementById("message");
-		btn = document.getElementById("send");
-		input.addEventListener("keyup", function(event) {
-			if (event.keyCode === 13) {
-   			event.preventDefault();
-				if (input.value == "") {
-					input.style.border = "2px solid #D8000C";
-				  input.placeholder = "please type something here";
-				} else {
-					input.style.border = "1px solid #eee";
-   				document.getElementById("send").click();
-				}
-				console.log("messages so far!");
-  		}
-		});
+      <header><center></center></header>
+      <div class="container" id="chat" style="background-image: url(https://www.transparenttextures.com/patterns/batthern.png); background-position: center;">
+        <link href="https://chatterjad.thextroyer1221.repl.co/style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" />
+        <div>
+          <div id="mario-chat" style="background-color: #2DAD67; margin-top: 0px;">
+            <center>
+              <img src="logo-small.png" alt="Gossipo" />
+              <p style="margin-top: -15px"><a class="pageload-link" href="#page-1">Close Chat</a></p>
+            </center>
 
-		input.addEventListener("keyup", function(event) {
-			if (error) {
-				input.style.border = "2px solid #D8000C";
-				input.placeholder = "please type something here";
-			} else {
-				input.style.border = "1px solid #eee";
-			}
-		});
-	</script>
-                </div>
+            <div id="chat-window">
+              <div id="output"></div>
+              <div id="feedback"></div>
+            </div>
+            <input id="handle" type="text" placeholder="Name" />
+            <input id="message" type="text" placeholder="Message" />
+            <button id="send">Send</button>
+          </div>
+          <script>
+            var input = document.getElementById("message");
+            btn = document.getElementById("send");
+            input.addEventListener("keyup", function(event) {
+              if (event.keyCode === 13) {
+                event.preventDefault();
+                if (input.value == "") {
+                  input.style.border = "2px solid #D8000C";
+                  input.placeholder = "please type something here";
+                } else {
+                  input.style.border = "1px solid #eee";
+                  document.getElementById("send").click();
+                }
+                console.log("messages so far!");
+              }
+            });
 
-				
-			</div><!-- /container -->
+            input.addEventListener("keyup", function(event) {
+              if (error) {
+                input.style.border = "2px solid #D8000C";
+                input.placeholder = "please type something here";
+              } else {
+                input.style.border = "1px solid #eee";
+              }
+            });
+          </script>
+        </div>
+      </div>
+      <!-- /container -->
 
-			<div id="loader" class="pageload-overlay" data-opening="M20,15 50,30 50,30 30,30 Z;M0,0 80,0 50,30 20,45 Z;M0,0 80,0 60,45 0,60 Z;M0,0 80,0 80,60 0,60 Z" data-closing="M0,0 80,0 60,45 0,60 Z;M0,0 80,0 50,30 20,45 Z;M20,15 50,30 50,30 30,30 Z;M30,30 50,30 50,30 30,30 Z">
-				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
-					<path d="M30,30 50,30 50,30 30,30 Z"/>
-				</svg>
-			</div><!-- /pageload-overlay -->
-			
-		</div><!-- /pagewrap -->
+      <div id="loader" class="pageload-overlay" data-opening="M20,15 50,30 50,30 30,30 Z;M0,0 80,0 50,30 20,45 Z;M0,0 80,0 60,45 0,60 Z;M0,0 80,0 80,60 0,60 Z" data-closing="M0,0 80,0 60,45 0,60 Z;M0,0 80,0 50,30 20,45 Z;M20,15 50,30 50,30 30,30 Z;M30,30 50,30 50,30 30,30 Z">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+          <path d="M30,30 50,30 50,30 30,30 Z" />
+        </svg>
+      </div>
+      <!-- /pageload-overlay -->
+    </div>
+    <!-- /pagewrap -->
     <script src="https://chatterjad.thextroyer1221.repl.co/chat.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/svgLoader.js"></script>
-		<script>
-			(function() {
-				var pageWrap = document.getElementById( 'pagewrap' ),
-					pages = [].slice.call( pageWrap.querySelectorAll( 'div.container' ) ),
-					currentPage = 0,
-					triggerLoading = [].slice.call( pageWrap.querySelectorAll( 'a.pageload-link' ) ),
-					loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 100 } );
+    <script src="js/classie.js"></script>
+    <script src="js/svgLoader.js"></script>
+    <script>
+      (function() {
+        var pageWrap = document.getElementById("pagewrap"),
+          pages = [].slice.call(pageWrap.querySelectorAll("div.container")),
+          currentPage = 0,
+          triggerLoading = [].slice.call(pageWrap.querySelectorAll("a.pageload-link")),
+          loader = new SVGLoader(document.getElementById("loader"), {speedIn: 100});
 
-				function init() {
-					triggerLoading.forEach( function( trigger ) {
-						trigger.addEventListener( 'click', function( ev ) {
-							ev.preventDefault();
-							loader.show();
-							// after some time hide loader
-							setTimeout( function() {
-								loader.hide();
+        function init() {
+          triggerLoading.forEach(function(trigger) {
+            trigger.addEventListener("click", function(ev) {
+              ev.preventDefault();
+              loader.show();
+              // after some time hide loader
+              setTimeout(function() {
+                loader.hide();
 
-								classie.removeClass( pages[ currentPage ], 'show' );
-								// update..
-								currentPage = currentPage ? 0 : 1;
-								classie.addClass( pages[ currentPage ], 'show' );
+                classie.removeClass(pages[currentPage], "show");
+                // update..
+                currentPage = currentPage ? 0 : 1;
+                classie.addClass(pages[currentPage], "show");
+              }, 2000);
+            });
+          });
+        }
 
-							}, 2000 );
-						} );
-					} );	
-				}
-
-				init();
-			})();
-		</script>
-	</body>
+        init();
+      })();
+    </script>
+  </body>
 </html>
